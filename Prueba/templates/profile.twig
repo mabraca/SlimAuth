@@ -1,0 +1,12 @@
+<h1> This profile </h1>
+
+<pre>
+	id: {{ user['id_account'] }}
+	login: {{ user['login'] }}
+    id: {{ user['id_account']}}
+    login: {user['login']}
+</pre>
+
+<form action="{{ path_for('logout') }}" method="post">
+    <input type="submit" value="Logout">
+</form>
